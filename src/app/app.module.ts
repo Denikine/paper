@@ -1,7 +1,7 @@
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ToastrModule } from "ngx-toastr";
+import { ToastrModule } from 'ngx-toastr';
 
 import { SidebarModule } from './sidebar/sidebar.module';
 import { FooterModule } from './shared/footer/footer.module';
@@ -15,17 +15,20 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
 import { KalendrierComponent } from './pages/kalendrier/kalendrier.component';
 
 
+import { CommonModule } from '@angular/common';
+
 @NgModule({
   declarations: [
     AppComponent,
     AdminLayoutComponent,
   ],
   imports: [
+    CommonModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(AppRoutes,{
     useHash: true,
     relativeLinkResolution: 'legacy'
-}),
+    }),
     SidebarModule,
     NavbarModule,
     ToastrModule.forRoot(),
