@@ -21,7 +21,7 @@ import { NotificationsComponent } from '../../pages/notifications/notifications.
 import { UpgradeComponent } from '../../pages/upgrade/upgrade.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   exports: [KalendrierComponent],
@@ -34,7 +34,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ContextMenuModule.forRoot({
       useBootstrap4: true,
     }),
-    BrowserAnimationsModule,
+    // BrowserAnimationsModule,
     RouterModule.forChild(AdminLayoutRoutes),
     FormsModule,
     NgbModule,
