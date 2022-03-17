@@ -1,6 +1,6 @@
-import { Component, OnInit, NgModule,ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit, NgModule, ChangeDetectionStrategy } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CalendarModule, DateAdapter,CalendarEvent, CalendarView } from 'angular-calendar';
+import { CalendarModule, DateAdapter, CalendarEvent, CalendarView } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 import { Subject } from 'rxjs';
 import { colors } from '../../layouts/demo-utils/colors';
@@ -24,7 +24,6 @@ export class MyModule {}
 
 @Component({
   moduleId: module.id,
-  // selector: 'app-kalendrier',
   selector: 'app-mwl-demo-component',
   templateUrl: './kalendrier.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
