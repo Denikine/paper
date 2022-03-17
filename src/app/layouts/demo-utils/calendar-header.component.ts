@@ -2,7 +2,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CalendarView } from 'angular-calendar';
 
 @Component({
-  selector: 'mwl-demo-utils-calendar-header',
+  selector: 'app-mwl-demo-utils-calendar-header',
   template: `
     <div class="row text-center">
       <div class="col-md-4">
@@ -72,7 +72,7 @@ export class CalendarHeaderComponent {
 
   @Input() viewDate: Date;
 
-  @Input() locale: string = 'en';
+  @Input() locale = 'fr';
 
   @Output() viewChange = new EventEmitter<CalendarView>();
 

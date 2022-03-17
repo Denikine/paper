@@ -8,24 +8,6 @@ import { colors } from '../../layouts/demo-utils/colors';
 declare var google: any;
 
 
-
-
-@Component({
-  moduleId: module.id,
-  selector: 'app-kalendrier',
-  templateUrl: './kalendrier.component.html',
-  styleUrls: ['./kalendrier.component.scss']
-})
-export class KalendrierComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
-
-
 @NgModule({
   imports: [
     BrowserAnimationsModule,
@@ -39,28 +21,20 @@ export class MyModule {}
 
 
 
+
 @Component({
-  selector: 'mwl-demo-component',
+  moduleId: module.id,
+  // selector: 'app-kalendrier',
+  selector: 'app-mwl-demo-component',
+  templateUrl: './kalendrier.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  templateUrl: 'kalendrier.component.html',
-  styles: [
-    `
-      .fill-height {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-      }
-    `,
-  ],
+  styleUrls: ['./kalendrier.component.scss']
 })
-export class DemoComponent {
+export class KalendrierComponent implements OnInit {
+
   view: CalendarView = CalendarView.Month;
-
   viewDate = new Date();
-
   events: CalendarEvent[] = [];
-
   refresh = new Subject<void>();
 
   addEvent(date: Date): void {
@@ -71,4 +45,12 @@ export class DemoComponent {
     });
     this.refresh.next();
   }
+    ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
 }
+
+
+
+
+

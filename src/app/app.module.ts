@@ -12,7 +12,6 @@ import { AppComponent } from './app.component';
 import { AppRoutes } from './app.routing';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
-import { KalendrierComponent } from './pages/kalendrier/kalendrier.component';
 
 
 import { CommonModule } from '@angular/common';
@@ -25,7 +24,7 @@ import { CommonModule } from '@angular/common';
   imports: [
     CommonModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot(AppRoutes,{
+    RouterModule.forRoot(AppRoutes, {
     useHash: true,
     relativeLinkResolution: 'legacy'
     }),
