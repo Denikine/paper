@@ -1,44 +1,36 @@
-.footer{
+.footer {
     padding: 24px 0;
-
-    &.footer-default{
-        background-color: #f2f2f2;
+    &.footer-default {
+        background-color: $main-light;
     }
-
-    nav{
+    nav {
         display: inline-block;
         float: left;
         padding-left: 0;
     }
-
-    ul{
+    ul {
         margin-bottom: 0;
         padding: 0;
         list-style: none;
-
-        li{
+        li {
             display: inline-block;
-
-            a{
+            a {
                 color: inherit;
                 padding: $padding-base-vertical;
                 font-size: $font-size-small;
                 text-transform: uppercase;
                 text-decoration: none;
-
-                &:hover{
+                &:hover {
                     text-decoration: none;
                 }
             }
         }
     }
-
-    .copyright{
+    .copyright {
         font-size: $font-size-small;
         line-height: 1.8;
     }
-
-    &:after{
+    &:after {
         display: table;
         clear: both;
         content: " ";

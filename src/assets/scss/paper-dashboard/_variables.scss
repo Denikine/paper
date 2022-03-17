@@ -5,18 +5,28 @@ $font-color: #66615b !default;
 $fill-font-color: rgba(255, 255, 255, 0.8);
 // $font-family-sans-serif:     'Montserrat', "Helvetica", Arial, sans-serif;
 // $sans-serif-family:          'Montserrat', 'Helvetica Neue',  Arial, sans-serif;
-$font-family-sans-serif: 'Yeseva One',
-"Helvetica",
+$font-family-serif: 'Yeseva One',
+'Didot',
+'Georgia',
+serif;
+$serif-family: 'Yeseva One',
+'Didot',
+'Georgia',
+'serif';
+$font-family-sans-serif: 'Roboto',
+'Helvetica Neue',
 Arial,
 sans-serif;
-$sans-serif-family: 'Yeseva One',
+$sans-serif-family: 'Roboto',
 'Helvetica Neue',
 Arial,
 sans-serif;
 $none: 0 !default;
 $border-thin: 1px !default;
 $border-thick: 2px !default;
-$white-color: #FFFFFF !default;
+//main b&w
+//$white-color: #FFFFFF !default;
+$white-color: #edf2ef !default;
 $white-bg: #FFFFFF !default;
 $orange-bg: #e95e38 !default;
 $smoke-bg: #F5F5F5 !default;
@@ -30,6 +40,7 @@ $medium-gray: #DDDDDD !default;
 $dark-gray: #9A9A9A !default;
 $table-line-color: #ccc !default;
 $muted-color: #a49e93 !default;
+//opacities
 $opacity-gray-3: rgba(222, 222, 222, .3) !default;
 $opacity-gray-5: rgba(222, 222, 222, .5) !default;
 $opacity-gray-8: rgba(222, 222, 222, .8) !default;
@@ -39,6 +50,7 @@ $datepicker-color-days: rgba(255, 255, 255, .8) !default;
 $datepicker-color-old-new-days: rgba(255, 255, 255, .4) !default;
 $opacity-1: rgba(255, 255, 255, .1) !default;
 $opacity-2: rgba(255, 255, 255, .2) !default;
+//backgrounds
 $transparent-bg: transparent !default;
 $dark-background: #555555 !default;
 $gray-input-bg: #fffcf5 !default;
@@ -54,7 +66,14 @@ $smoke-bg: #F5F5F5 !default;
 $pale-bg: #FFFCF5 !default;
 $medium-pale-bg: #F1EAE0 !default;
 $default-body-bg: #f4f3ef !default;
-$primary-color: #51cbce !default;
+//default personnal colors
+$main-light: #edf2ef !default;
+$main-green: #548687 !default;
+$main-dark: #231705 !default;
+$main-red: #db504a !default;
+//notifs
+//$primary-color: #51cbce !default;
+$primary-color: #548687 !default;
 $primary-states-color: darken($primary-color, 10%) !default;
 $success-color: #6bd098 !default;
 $success-states-color: darken($success-color, 10%) !default;
@@ -75,6 +94,7 @@ $success-color-opacity: rgba(24, 206, 15, .3) !default;
 $info-color-opacity: rgba(44, 168, 255, .3) !default;
 $warning-color-opacity: rgba(255, 178, 54, .3) !default;
 $danger-color-opacity: rgba(255, 54, 54, .3) !default;
+//new
 $new-blue: #1DC7EA;
 $new-purple: #9368E9;
 $new-red: #FB404B;

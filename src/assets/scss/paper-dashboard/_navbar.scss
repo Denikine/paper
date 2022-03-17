@@ -1,117 +1,99 @@
-.navbar{
+.navbar {
     padding-top: $navbar-padding-base;
     padding-bottom: $navbar-padding-base;
     min-height: 53px;
     margin-bottom: 20px;
-
-    a{
+    a {
         vertical-align: middle;
-
-        &:not(.btn):not(.dropdown-item){
-            color: $white-color;
+        &:not(.btn):not(.dropdown-item) {
+            //color: $white-color;
+            color: $main-light;
         }
-
-        &.dropdown-item{
-            color: $default-color;
+        &.dropdown-item {
+            //color: $default-color;
+            color: $main-green;
         }
     }
-
-
-
-    &.bg-white{
-      .input-group .form-control,
-      .input-group.no-border .form-control{
-        color: $default-color;
-
-        @include placeholder(){
-          color: $default-color;
-        };
-      }
-      .input-group-prepend .input-group-text i,
-      .input-group-append .input-group-text i{
-        color: $default-color;
-        opacity: .5;
-      }
+    &.bg-white {
+        .input-group .form-control,
+        .input-group.no-border .form-control {
+            //color: $default-color;
+            color: $main-red;
+            @include placeholder() {
+                color: $main-light;
+            }
+            ;
+        }
+        .input-group-prepend .input-group-text i,
+        .input-group-append .input-group-text i {
+            color: $main-red;
+            opacity: .5;
+        }
     }
-
     .form-group,
-    .input-group{
-      margin: 0;
-      margin-left: -3px;
-      margin-right: 5px;
-
-      .form-group-addon,
-      .input-group-prepend .input-group-text,
-      .input-group-append .input-group-text{
-        color: $default-color;
-
-        i {
-          opacity: 1;
+    .input-group {
+        margin: 0;
+        margin-left: -3px;
+        margin-right: 5px;
+        .form-group-addon,
+        .input-group-prepend .input-group-text,
+        .input-group-append .input-group-text {
+            color: $main-light;
+            i {
+                opacity: 1;
+            }
         }
-      }
-
-      &.no-border{
-        .form-control{
-          color: $default-color;
-
-          @include placeholder(){
-            color: $default-color;
-          };
+        &.no-border {
+            .form-control {
+                color: $main-green;
+                @include placeholder() {
+                    color: $main-light;
+                }
+                ;
+            }
         }
-      }
     }
-
-    p{
+    p {
         display: inline-block;
         margin: 0;
         line-height: 1.8em;
         font-size: 1em;
         font-weight: 400;
     }
-
-    &.navbar-absolute{
+    &.navbar-absolute {
         position: absolute;
         width: 100%;
         padding-top: 10px;
         z-index: 1029;
     }
-
-    .documentation &{
-        &.fixed-top{
+    .documentation & {
+        &.fixed-top {
             left: 0;
             width: initial;
         }
     }
-
-    .navbar-wrapper{
+    .navbar-wrapper {
         display: inline-flex;
         align-items: center;
-
-        .navbar-minimize{
+        .navbar-minimize {
             padding-right: 10px;
-
-            .btn{
+            .btn {
                 margin: 0;
             }
         }
-
-        .navbar-toggle{
-            .navbar-toggler{
+        .navbar-toggle {
+            .navbar-toggler {
                 padding-left: 0;
             }
-
-            &:hover{
-                & .navbar-toggler-bar.bar2{
+            &:hover {
+                & .navbar-toggler-bar.bar2 {
                     width: 22px;
                 }
             }
         }
     }
-
-
-
-    .navbar-nav{
-        &.navbar-logo{
+    .navbar-nav {
+        &.navbar-logo {
             position: absolute;
             left: 0;
             right: 0;
@@ -119,66 +101,57 @@
             width: 49px;
             top: -4px;
         }
-
-        .nav-link.btn{
+        .nav-link.btn {
             padding: $padding-btn-vertical $padding-btn-horizontal;
-            &.btn-lg{
+            &.btn-lg {
                 padding: $padding-large-vertical $padding-large-horizontal;
             }
-            &.btn-sm{
+            &.btn-sm {
                 padding: $padding-small-vertical $padding-small-horizontal;
             }
         }
-
-        .nav-link{
+        .nav-link {
             text-transform: uppercase;
             font-size: $font-size-mini;
             padding: $padding-base-vertical $padding-base-horizontal;
             line-height: $line-height-nav-link;
             margin-right: 3px;
-
-            i.fa + p,
-            i.nc-icon + p{
+            i.fa+p,
+            i.nc-icon+p {
                 margin-left: 3px;
             }
-
             i.fa,
-            i.nc-icon{
+            i.nc-icon {
                 font-size: 18px;
                 position: relative;
                 top: 3px;
                 text-align: center;
                 width: 21px;
             }
-
-            i.nc-icon{
+            i.nc-icon {
                 top: 4px;
                 font-size: 16px;
             }
-
-            &.profile-photo{
-                .profile-photo-small{
+            &.profile-photo {
+                .profile-photo-small {
                     width: 27px;
                     height: 27px;
                 }
             }
-
-            &.disabled{
+            &.disabled {
                 opacity: .5;
                 color: $white-color;
             }
         }
-
         .nav-item.active .nav-link:not(.btn),
         .nav-item .nav-link:not(.btn):focus,
         .nav-item .nav-link:not(.btn):hover,
-        .nav-item .nav-link:not(.btn):active{
+        .nav-item .nav-link:not(.btn):active {
             border-radius: $border-radius-small;
-            color: $default-color;
+            color: $main-light;
         }
     }
-
-    .logo-container{
+    .logo-container {
         width: 27px;
         height: 27px;
         overflow: hidden;
@@ -186,125 +159,111 @@
         border-radius: 50%;
         border: 1px solid transparent;
     }
-
-    .navbar-brand{
+    .navbar-brand {
         text-transform: capitalize;
         font-size: $font-size-large-navbar;
         padding-top: $padding-base-vertical;
         padding-bottom: $padding-base-vertical;
         line-height: $line-height-nav-link;
     }
-
-    .navbar-toggler{
+    .navbar-toggler {
         width: 37px;
         height: 27px;
         vertical-align: middle;
         outline: 0;
         cursor: pointer;
-
-        & .navbar-toggler-bar.navbar-kebab{
+        & .navbar-toggler-bar.navbar-kebab {
             width: 3px;
             height: 3px;
             border-radius: 50%;
             margin: 0 auto;
         }
     }
-
-    .button-dropdown{
-        .navbar-toggler-bar:nth-child(2){
+    .button-dropdown {
+        .navbar-toggler-bar:nth-child(2) {
             width: 17px;
         }
     }
-
-    &.navbar-transparent{
-      background-color: $transparent-bg !important;
-      box-shadow: none;
-      border-bottom: 1px solid #ddd;
-
-      a:not(.dropdown-item):not(.btn){
-        color: $default-color;
-
-        &.disabled{
-          opacity: .5;
-          color: $default-color;
-         }
-       }
-
-       .button-bar{
-           background: $default-color;
-       }
-
-      .nav-item .nav-link:not(.btn){
-        color: $default-color;
-      }
-      .nav-item.active .nav-link:not(.btn),
-      .nav-item .nav-link:not(.btn):focus,
-      .nav-item .nav-link:not(.btn):hover,
-      .nav-item .nav-link:not(.btn):focus:hover,
-      .nav-item .nav-link:not(.btn):active {
-        color: $primary-color;
-      }
-    }
-
-    &.bg-white {
-        a:not(.dropdown-item):not(.btn){
-            color: $default-color;
-
-            &.disabled{
+    &.navbar-transparent {
+        //background-color: $transparent-bg !important;
+        background-color: $main-green;
+        box-shadow: none;
+        border-bottom: 1px solid #ddd;
+        a:not(.dropdown-item):not(.btn) {
+            color: $main-light;
+            &.disabled {
                 opacity: .5;
-                color: $default-color;
+                color: $main-dark;
             }
         }
-
-        .button-bar{
-            background: $default-color;
+        .button-bar {
+            background: $main-light;
         }
-
+        .nav-item .nav-link:not(.btn) {
+            color: $main-light;
+        }
         .nav-item.active .nav-link:not(.btn),
         .nav-item .nav-link:not(.btn):focus,
         .nav-item .nav-link:not(.btn):hover,
-        .nav-item .nav-link:not(.btn):active{
-            color: $info-color;
-        }
-
-        .logo-container{
-            border: 1px solid $default-color;
+        .nav-item .nav-link:not(.btn):focus:hover,
+        .nav-item .nav-link:not(.btn):active {
+            color: $main-light;
         }
     }
-
+    &.bg-white {
+        a:not(.dropdown-item):not(.btn) {
+            color: $main-red;
+            &.disabled {
+                opacity: .5;
+                color: $main-red;
+            }
+        }
+        .button-bar {
+            background: $main-red;
+        }
+        .nav-item.active .nav-link:not(.btn),
+        .nav-item .nav-link:not(.btn):focus,
+        .nav-item .nav-link:not(.btn):hover,
+        .nav-item .nav-link:not(.btn):active {
+            color: $main-red;
+        }
+        .logo-container {
+            border: 1px solid $main-light;
+        }
+    }
     .navbar-collapse {
-      .nav-item {
-        a {
-          font-size: $font-size-base;
+        .nav-item {
+            a {
+                font-size: $font-size-base;
+            }
         }
-      }
     }
 }
 
-.bg-default{
-    background-color: $default-color !important;
+.bg-default {
+    background-color: $main-light !important;
 }
 
-.bg-primary{
-    background-color: $primary-color !important;
+.bg-primary {
+    background-color: $main-light !important;
 }
 
-.bg-info{
-    background-color: $info-color !important;
+.bg-info {
+    background-color: $main-light !important;
 }
 
-.bg-success{
-    background-color: $success-color !important;
+.bg-success {
+    background-color: $main-light !important;
 }
 
-.bg-danger{
-    background-color: $danger-color !important;
+.bg-danger {
+    background-color: $main-light !important;
 }
 
-.bg-warning{
-    background-color: $warning-color !important;
+.bg-warning {
+    background-color: $main-light !important;
 }
 
-.bg-white{
-    background-color: $white-color !important;
+.bg-white {
+    background-color: $main-light !important;
 }
