@@ -18,5 +18,9 @@
       "dom"
     ],
     "module": "esnext"
+  },
+  "angularCompilerOptions": {
+    "strictTemplates":true,
   }
+
 }
