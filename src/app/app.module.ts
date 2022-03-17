@@ -12,14 +12,13 @@ import { AppComponent } from './app.component';
 import { AppRoutes } from './app.routing';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
-import { KalendrierComponent } from './kalendrier/kalendrier.component';
+import { KalendrierComponent } from './pages/kalendrier/kalendrier.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    KalendrierComponent
   ],
   imports: [
     BrowserAnimationsModule,
